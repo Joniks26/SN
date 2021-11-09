@@ -1,0 +1,22 @@
+.nav {
+    grid-area: n;
+    background-color: grey;
+    padding: 50px;
+    
+  }
+
+.item {
+    border: solid 3px grey;
+}
+
+.item a {
+    color: snow;
+    border-bottom: solid 7px grey;
+    text-decoration: none;
+    
+}
+
+.item a.activeLink {
+  color: #60DBFA;
+}
+

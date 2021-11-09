@@ -1,0 +1,15 @@
+.usersPhoto {
+    width: 50px;
+}
+
+.item {
+    border: solid 20px white;
+}
+
+.selectedPage {
+    font-weight: bold;
+}
+
+.pages {
+    border-top: solid 100px white;
+}

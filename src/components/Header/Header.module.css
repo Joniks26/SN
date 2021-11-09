@@ -1,0 +1,28 @@
+.header{
+    grid-area: h;
+    background-color: #323232;
+    border: 10px solid #323232;
+  }
+
+.header img {
+    width: 60px;
+    height: 40px;
+    transform: rotate(1440deg);
+    transition: all 2s;
+  }
+
+.header img:hover {
+    transform: rotate(0deg);
+    transition-delay: 0;
+    transition: all 10s;
+}
+
+.loginBlock {
+    float: right;
+    border: solid 5px #323232;
+    color: #60DBFA;
+}
+
+.loginBlock a {
+    color: #60DBFA;
+}
