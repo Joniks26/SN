@@ -2,7 +2,7 @@ import React from 'react';
 import  s from './ProfileInfo.module.css';
 import Loading from "../../common/preloader/preloader";
 import userPhoto from "../../../assets/imasges/userPhoto.png";
-import ProfileStatus from "./ProfileStatus"
+import {ProfileStatusSUS} from "./ProfileStatusSUS";
 
 const ProfileInfo = (props) => {
     if (!props.profile) {
@@ -21,7 +21,7 @@ const ProfileInfo = (props) => {
             {props.profile.fullName}
         </div>
         <div>
-            <ProfileStatus status={props.status} updateStatus={props.updateStatus} />
+            <ProfileStatusSUS status={props.status} updateStatus={props.updateStatus} />
         </div>
     </div>
 )
