@@ -12,7 +12,7 @@ const LoginForm = ({handleSubmit}) => {
         <form onSubmit={handleSubmit}>
                 {createField('Email', 'email', [required], Input)}
                 {createField('Password', 'password', [required], Input, {type: 'password'})}
-                {createField('rememberMe',[], Input, {type: 'checkbox'}, 'remember me')}
+                {createField(null,'rememberMe',[], Input, {type: 'checkbox'}, 'remember me')}
             <div>
                 <button>Login</button>
             </div>
