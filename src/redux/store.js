@@ -36,18 +36,17 @@ let store = {
         return this._state;
     },
     subscribe(observer) {
-        this._callSubscriber = observer;  //observer - патерн. export in index.js, callback in store.js
+        this._callSubscriber = observer;
     },
 
-    dispatch(action) { // action - объект у которого есть type
+    dispatch(action) {
 
         this._state.profilePage = profileReducer(this._state.profilePage, action);
         this._state.messagesPage = dialogsReducer(this._state.messagesPage, action);
         this._callSubscriber(this._state);
-        }
     }
+}
 
 
 export default store;
 window.state = store;
-// store - OOP

@@ -1,6 +1,6 @@
 import React from "react";
-import s from './Settings.module.css';
-const Dialogs = (props) => {
+
+const Settings = () => {
     return (
         <div>
             Settings
@@ -8,4 +8,4 @@ const Dialogs = (props) => {
     )
 }
 
-export default  Dialogs;
+export default  Settings;

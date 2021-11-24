@@ -1,6 +1,6 @@
 import React from "react";
-import s from './News.module.css';
-const Dialogs = (props) => {
+
+const News = () => {
     return (
         <div>
             News
@@ -8,4 +8,4 @@ const Dialogs = (props) => {
     )
 }
 
-export default  Dialogs;
+export default  News;

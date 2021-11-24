@@ -27,7 +27,7 @@ export const ProfileStatusSUS = (props) => {
         <div>
             {!editMode &&
             <div>
-                <span onDoubleClick={activateEditMode} > {props.status || "Укажите статус"}</span>
+               <b>Status:</b> <span onDoubleClick={activateEditMode} > {props.status || "Укажите статус"}</span>
             </div>
             }
             {editMode &&

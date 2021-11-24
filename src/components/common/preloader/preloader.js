@@ -2,7 +2,7 @@ import loading from "../../../assets/imasges/loading.svg";
 import React from "react";
 
 
-let Loading = (props) => {
+let Loading = () => {
     return <img src={loading}/>
 }
 

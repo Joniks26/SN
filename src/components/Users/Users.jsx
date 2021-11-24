@@ -14,8 +14,7 @@ let Users = (props) => {
     }
 
     return <div>
-        {
-            props.users.map(u => <div key={u.id} className={s.item}>
+        {props.users.map(u => <div key={u.id} className={s.item}>
             <span>
                 <div>
                     <NavLink to={'/profile/' + u.id}>
@@ -25,16 +24,18 @@ let Users = (props) => {
                 <div>
                     {u.followed
                         ? <button disabled={props.followingInProgress.some(id => id === u.id)}
-                                  onClick={() => {props.unfollow(u.id)}}>
+                                  onClick={() => {
+                                      props.unfollow(u.id)
+                                  }}>
                             Unfollow</button>
-
                         : <button disabled={props.followingInProgress.some(id => id === u.id)}
-                                  onClick={() => {props.follow(u.id)}}>
+                                  onClick={() => {
+                                      props.follow(u.id)
+                                  }}>
                             Follow</button>}
-
                 </div>
             </span>
-                <span>
+            <span>
                 <span>
                     <div>{u.name}</div>
                     <div>{u.status}</div>
@@ -44,9 +45,8 @@ let Users = (props) => {
                     <div>{"u.location.city"}</div>
                 </span>
             </span>
-            </div>)
+        </div>)
         }
-
         <div className={styles.pages}>
             {pages.map(p => {
                 return <span className={props.currentPage === p && s.selectedPage}
@@ -55,8 +55,7 @@ let Users = (props) => {
                              }}>{p}</span>
             })}
         </div>
-
     </div>
-} // SPAN'ы можно удалить
+}
 
 export default Users;

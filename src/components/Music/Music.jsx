@@ -1,6 +1,5 @@
 import React from "react";
-import s from './Music.module.css';
-const Dialogs = (props) => {
+const Music = () => {
     return (
         <div>
             Music
@@ -8,4 +7,4 @@ const Dialogs = (props) => {
     )
 }
 
-export default  Dialogs;
+export default  Music;
