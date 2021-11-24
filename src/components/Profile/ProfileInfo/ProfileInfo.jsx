@@ -4,7 +4,6 @@ import Loading from "../../common/preloader/preloader";
 import userPhoto from "../../../assets/imasges/userPhoto.png";
 import {ProfileStatusSUS} from "./ProfileStatusSUS";
 import ProfileDataForm from "./ProfileDataForm";
-import ProfileDataFormReduxForm from "./ProfileDataForm";
 
 const ProfileInfo = (props) => {
 
@@ -56,7 +55,7 @@ const ProfileInfo = (props) => {
 const ProfileData = (props) => {
     return <div className={s.info}>
         {props.isOwner && <div>
-            <button onClick={props.goToEditMode}>edit</button>
+            <button className={s.editButton} onClick={props.goToEditMode}>Edit</button>
         </div>}
         <div>
             <b>Open to work</b>: {props.profile.lookingForAJob ? 'yes' : 'no'}

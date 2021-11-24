@@ -6,7 +6,7 @@ import {reduxForm} from "redux-form";
 const ProfileDataForm = ({handleSubmit, profile, error}) => {
     return <form className={s.info} onSubmit={handleSubmit}>
         <div>
-            <button>save</button>
+            <button className={s.editButton}>Save</button>
         </div>
         {error && <div className={s.error}>
             {error}

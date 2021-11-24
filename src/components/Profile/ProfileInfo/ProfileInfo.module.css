@@ -28,6 +28,19 @@
   padding-left: 10px;
 }
 
+.editButton {
+  backface-visibility: hidden;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  border-color: #111;
+  color: white;
+  background: #323232;
+  border-radius: 5px;
+  height: 30px;
+}
+
 .info {
   padding: 10px;
 }
