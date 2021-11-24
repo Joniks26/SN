@@ -1,2 +1,2 @@
 Social Network
-![img.png](readme.png)
+![img.png](SN.png)
