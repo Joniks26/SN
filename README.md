@@ -1,2 +1,2 @@
 Social Network
-![img.png](SN.png)
+![img.png](socialNetwork.png)

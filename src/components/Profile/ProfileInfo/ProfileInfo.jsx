@@ -26,7 +26,7 @@ const ProfileInfo = (props) => {
     return (
         <div>
             <div>
-                <img className={s.open} src='https://www.spellbrand.com/images/blog/images/neon-logo-designs.jpg'/>
+                <img className={s.open} src='https://img5.goodfon.ru/wallpaper/nbig/1/b9/nu-takoe-nastroenie-shutka.jpg'/>
             </div>
             <div>
                 <img className={s.ava}
